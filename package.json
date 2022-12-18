@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "concurrently \"tsc && vite build\" \"node server.js\"",
-    "preview": "vite preview"
+    "build": "tsc && vite build",
+    "preview": "concurrently \"vite preview\" \"node server.js\""
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
